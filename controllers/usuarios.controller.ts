@@ -8,7 +8,7 @@ export const getUserById = (req:  any, res: any) => {
         res.status(200).json({message:`Bienvenido Usuario: ${id}`});
     } 
     else {
-        res.redirect("/Usuarios/register");
+        res.redirect("/Usuarios/registro");
     }
 };
 

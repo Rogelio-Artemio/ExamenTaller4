@@ -3,8 +3,8 @@ import { getUserById, registeUser } from "../controllers/usuarios.controller.ts"
 
 const router = Router();
 
-router.get("/find/:id", getUserById);
+router.get("/all/:id", getUserById);
 
-router.get("/register", registeUser);
+router.get("/registro", registeUser);
 
 export default router

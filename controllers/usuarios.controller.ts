@@ -1,4 +1,4 @@
-const idUsers = ["Rogelio", "Per"];
+const idUsers = ["Rogelio", "Perez"];
 
 export const getUserById = (req:  any, res: any) => {
     const { id } = req.params;

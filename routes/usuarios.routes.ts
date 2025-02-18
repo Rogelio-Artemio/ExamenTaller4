@@ -1,10 +1,10 @@
-import { Router } from "express";
-import { getUserById, registeUser } from "../controllers/usuarios.controller.ts";
+import express from "express";
+import * as userController from "../controllers/usuarios.controller.ts";
 
-const router = Router();
+const router = express.Router();
 
-router.get("/all/:id", getUserById);
+router.get("/all/:id", userController.getUserById);
+router.get("/registro", userController.registeUser);
 
-router.get("/registro", registeUser);
+export default router;
 
-export default router
